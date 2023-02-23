@@ -1,0 +1,136 @@
+/* Menu général */
+    #menuLocations ul li {
+        display: inline-block;
+        border-radius: 5px 5px 0 0;
+        border: 1px solid gray;
+        padding: 10px;
+        background-color: lightgray;
+    }
+
+    #menuLocations ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+
+    #menuLocations ul li a:hover {
+        color: blueviolet;
+    }
+
+    #menuLocations ul li#active {
+        background-color: white;
+    }
+
+    #menuLocations ul li#active a,
+    #menuLocations ul li#active a:hover {
+        color: grey;
+        font-weight: bold;
+        cursor: default;
+    }
+
+/* Formulaire ajout */
+    .emplacement {
+        max-width: 700px;
+        margin: 1em auto;
+        border: 1px solid black;
+    }
+
+    h2, h3 {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .input-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+        margin : 1em auto 1em 3em;
+        font-size: 1.5em;
+    }
+
+    label {
+        width: 30%;
+    }
+
+    .emplacement input {
+        width: 50%;
+        padding: 0.5em;
+    }
+
+    .error, .erreur {
+        display: none;
+        width: 100%;
+        flex-grow: 1;
+        justify-self: start;
+        color: red;
+        font-style: italic;
+        margin-bottom: 0.2em;
+    }
+
+    small {
+        margin-left: 2em;
+        color: rgb(220, 53, 53);
+    }
+
+
+    #submit_location, #updateLoc{
+        width: 30%;
+        margin: 2em 35% 3em 35%;
+        padding: 0.5em;
+    }
+
+
+/* Location card preview */
+
+ #placecode {
+    font-size: 1.5em;
+    margin: 0.5em auto;
+    text-align: center;
+    
+ }
+
+ #shortcode {
+    margin: 0 auto;
+    max-width: 200px;
+    font-size: 1.1em;
+    font-weight: 600;
+    background-color: lightgreen;
+    border: 1px solid lightgray;
+    padding: 0.2em;
+    cursor: pointer;
+ }
+
+ #locPreview {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 2em auto;
+    align-items: center;
+    padding: 2em;
+    border: 2px solid rgb(131, 10, 10);
+   background-color: white;
+ }
+
+ .title {
+    color: rgb(63, 49, 49);
+    font-size: 2em;
+    font-weight: bold;
+ }
+
+ #map {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+ }
+
+ #deleteLoc {
+    width: 90%;
+    margin-right: 1em;
+    padding: 1em;
+    border: none;
+    font-style: italic;
+    font-size: 1em;
+    text-decoration: underline;
+    text-align: right;
+ }
